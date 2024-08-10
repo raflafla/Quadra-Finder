@@ -108,16 +108,21 @@ strong{
     background-color: var(--cor-navbar);
     flex-direction: column;
 }
-
+.rodape-div{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
 
 .rodape-titulo{
     margin: 0;
     font-size: 1.1rem;
-    align-self: flex-start;
 }
+
 .rodape-texto{
     margin: 5px;
-    align-self: flex-start;
+
     font-size: 0.9rem;
 }
 .rodape-texto-final{
@@ -228,10 +233,13 @@ strong{
     font-size: 1.5rem;
 }
 
-.section-quem-somos-texto{
-    text-align: center;
+.fa-icons{
+    font-size: 1.2rem;
+    color: var(--cor-principal);
+    margin: 10px;
 }
-
-.becalho_menu_logo{
-    max-width: 60px;
+.fa-icons:hover{
+    color: var(--cor-secundaria);
+    font-size: 1.3rem;
+    transition: 0.3s;
 }
