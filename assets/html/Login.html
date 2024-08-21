@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/imgs/logo.png">
     <link rel="stylesheet" href="../css/login.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="../js/main.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -25,15 +26,15 @@
     </header>
 
     <section class="container-login">
-        <form class="container-login-form">
+        <form class="container-login-form" name="form" onsubmit="verify(event)">
             <h1 class="container-login-titulo">Login</h1>
             <label class="container-login-label">
                 <p class="contaier-login-texto">User</p>
-                <input type="text" required placeholder="Digie seu usuário" class="container-login-input">
+                <input type="text" required placeholder="Digie seu usuário" class="container-login-input" name="user">
             </label>
             <label class="container-login-label">
                 <p class="contaier-login-texto">Password</p>
-            <input type="password" required minlength="3" placeholder="Digite sua senha" class="container-login-input">
+            <input type="password" required minlength="3" placeholder="Digite sua senha" class="container-login-input" name="password">
             </label>
             <a href="esqueci.html" class="container-login-link">Esqueci minha Senha!</a>
             <button class="container-login-botao">Entrar</button>
@@ -45,8 +46,13 @@
     <footer class="rodape">
         <div class="rodape-div">
             <h3 class="rodape-titulo">Contato</h3>
-            <p class="rodape-texto"> Telefone: <a  href="https://wa.me/5516992594"  target="" class="rodape-texto-link">(55) 16 99239-269 </a></p>
-            <p class="rodape-texto">Email: <a href="mailto:" class="rodape-texto-link">Quadra.Finder@gmail.com</a></p>
+            <div class="rodape-icons">
+                <a href="https://wa.me/5516992594" class="icons-links"><i class="fa-solid fa-phone fa-icons"></i></a>
+                <a href="mailto:Quadra.Finder@gmail.com"><i class="fa-solid fa-envelope fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-instagram fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-twitter fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-tiktok fa-icons"></i></a>
+            </div>
             <p class="rodape-texto-final">©2024 São Carlos Quadra Finder - Quadras perto de sua Região.. Todos os Direitos Reservados. Política de Privacidade</p>
         </div>
     </footer>
