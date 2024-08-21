@@ -144,6 +144,7 @@ strong{
     margin: 0;
     align-content: center;
     margin: 50px;
+   
 }
 .secao-item{
     border: solid 0px var(--cor-principal);
@@ -153,8 +154,7 @@ strong{
     margin: 5px;
     align-items: center;
     text-align: center;
-    max-width: 500px;
-    padding: 15px;
+    max-height: 1000px;
 }
 .secao-titulo{
     text-align: center;

@@ -85,3 +85,7 @@
 .container-login-form-senha{
     display: flex;
 }
+
+.container-login-endereco{
+    margin: 2px;
+}

@@ -6,8 +6,10 @@
     <link href="https://css.gg/css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/index.css">
     <script src="https://kit.fontawesome.com/e9b73e9254.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="assets/imgs/logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/Cadastro.css">
     <title>Cadastrar - se</title>
 </head>
 <body>
@@ -24,143 +26,73 @@
         </nav>
     </header>
     
-    <hr>
         
-    <h1> Cadastre-se</h1>
-
-    <p>Crie a Sua conta para aproveitar a melhor experiência de Quadras</p>
-    <p> Você já tem uma conta? acesse o seu Login. <a href="./Login.html" target="_top"> Clique aqui</a></p>
-
-    <H2> Informações pessoais </H2>
-    <form action="????????.html">
-        <p>Nome completo:</p>
-        <input placeholder="Digite o seu nome"type="text" required/>
-        <br/>
-
-        <p>Nome da Mãe:</p>
-        <input placeholder="Digite o nome da sua mãe"type="text" required/>
-        <br/>
-
-        <p>CPF:</p>
-        <input placeholder="Digite o seu CPF"type="number" required/>
-        <br/>
-
-        <p>RG:</p>
-        <input placeholder="Digite o seu RG"type="number" required />
-
-        <p>Data de nascimento:</p>
-        <input id="date" type="date" required />
-        <hr>
 
 
-    Endereço: <br/>
-    <input placeholder="Rua"type="text" required /> <input placeholder="Número"type="number" required/> <br/> <br/> 
-    <input placeholder="Bairro"type="text" required /> <input placeholder="Complemento"type="text" required /> <br/> <br/> <input placeholder="Estado"type="text" required /> <br/> <br/>
-    <input placeholder="Cidade"type="text" required /> <input placeholder="CEP"type="number" required /> <br/> <br/>  <textarea placeholder="Digite a Descrição aqui..." required ></textarea>
-
-<hr>
-
-
-
-    <p><strong> Digite o E-mail:  </strong></p>
-            <input placeholder="Digite o email" type="email" required /> 
-            <br/>
-            <p> <strong> Digite sua Senha:</strong></p>
-            <input placeholder="Digite a senha"type="password" required />
-            <br/>
-            
-            <p> <strong> Digite seu Telefone:</strong></p>
-            <input placeholder="Digite o Celular" type="number" required />
-            
-            <br/>
-            <br/>
-            <button>Cadastrar</button> 
-            
-</form>
-
-    <hr>
+    <section class="container-login">
+        <form class="container-login-form" name="form" onsubmit="verify(event)">
+            <h1 class="container-login-titulo"> Cadastro</h1>
+            <p> Você já tem uma conta? acesse o seu Login. <a href="./Login.html" target="_top"> Clique aqui</a></p>
+            <div class="container-login-form-senha">
+            <label class="container-login-label">
+                <p class="contaier-login-texto">Nome Completo</p>
+                <input type="text" required placeholder="Digie seu nome" class="container-login-input" name="user">
+            </label>
+            <label class="container-login-label">
+                <p class="contaier-login-texto">Nome de Usuário</p>
+                <input type="text" required placeholder="Digie seu usuário" class="container-login-input" name="user">
+            </label>
+        </div>
+        <div class="container-login-form-senha">
+            <label class="container-login-label">
+                <p class="contaier-login-texto">Email</p>
+                <input type="email" required placeholder="Digie seu Email" class="container-login-input" name="user">
+            </label>
+            <label class="container-login-label">
+                <p class="contaier-login-texto">Data de Nascimento</p>
+                <input type="date" required class="container-login-input" name="user">
+            </label>
+        </div>
+            <div class="container-login-form-senha">
+                <label class="container-login-label">
+                    <p class="contaier-login-texto">Senha</p>
+                <input type="password" required minlength="3" placeholder="Digite sua senha" class="container-login-input" name="password">
+                </label>
+                <label class="container-login-label">
+                    <p class="contaier-login-texto">Confirme Sua senha</p>
+                <input type="password" required minlength="3" placeholder="Confirme Sua senha" class="container-login-input" name="password">
+                </label>
+            </div>
+            <h2 class="container-login-endereco">Endereço</h2>
+            <label class="container-login-label">
+                <input placeholder="Digite sua Rua" type="text" required  class="container-login-input"/>
+                 <input placeholder="Digite seu Número" type="number" required class="container-login-input"/>
+            </label>
+        
+            <label class="container-login-label">
+                <input placeholder="Digite seu Bairro"type="text" required class="container-login-input"/> 
+                <input placeholder="Digite seu CEP"type="number" required class="container-login-input"/>
+            </label>
+            <label class="container-login-label">
+                <input placeholder="Digite sua Cidade"type="text" required class="container-login-input"/>
+                <input placeholder="Digite seu Estado"type="text" required class="container-login-input"/>
+            </label>
+            <button class="container-login-botao">Cadastrar</button>
+        </form>
+    </section>
 
     <footer class="rodape">
         <div class="rodape-div">
             <h3 class="rodape-titulo">Contato</h3>
-            <p class="rodape-texto"> Telefone: <a  href="https://wa.me/5516992594"  target="" class="rodape-texto-link">(55) 16 99239-269 </a></p>
-            <p class="rodape-texto">Email: <a href="mailto:" class="rodape-texto-link">Quadra.Finder@gmail.com</a></p>
+            <div class="rodape-icons">
+                <a href="https://wa.me/5516992594" class="icons-links"><i class="fa-solid fa-phone fa-icons"></i></a>
+                <a href="mailto:Quadra.Finder@gmail.com"><i class="fa-solid fa-envelope fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-instagram fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-twitter fa-icons"></i></a>
+                <a href="" class="icons-links"><i class="fa-brands fa-tiktok fa-icons"></i></a>
+            </div>
             <p class="rodape-texto-final">©2024 São Carlos Quadra Finder - Quadras perto de sua Região.. Todos os Direitos Reservados. Política de Privacidade</p>
         </div>
     </footer>
-
-
-<script>
-    function correto(e){
-    e.preventDefault();
-
-    const usuario = {
- 
-        nome:"",
-        mae:"",
-        cpf:"",
-        rg:"",
-        data:"",
-        
-        rua:"",
-        numero:"",
-        bairro:"",
-        comple:"",
-        estado:"",
-        cidade:"",
-        cep:"",
-        descri:"",
-
-        email:"",
-        senha:"",
-        telefone:"",
-
-
-    };
-
-     usuario.nome = e.target.nome.value;
-     usuario.mae = e.target.mae.value;
-     usuario.cpf = e.target.cpf.value;
-     usuario.rg = e.target.rg.value;
-     usuario.data = e.target.data.value;
-
-     usuario.rua = e.target.rua.value;
-     usuario.numero = e.target.numero.value;
-     usuario.bairro = e.target.bairro.value;
-     usuario.comple = e.target.comple.value;
-     usuario.estado = e.target.estado.value;
-     usuario.cidade = e.target.cidade.value;
-     usuario.cep = e.target.cep.value;
-     usuario.descri = e.target.descri.value;
-
-     usuario.email = e.target.email.value;
-     usuario.senha = e.target.senha.value;
-     usuario.telefone = e.target.telefone.value;
-
-
-     console.log("nome:", usuario.nomes)
-     console.log("mae:", usuario.mae)
-     console.log("cpf:", usuario.cpf)
-     console.log("rg:", usuario.rg)
-     console.log("data:",usuario.data)
-     
-        console.log("rua:", usuario.rua)
-        console.log("numero:", usuario.bairro)
-        console.log("comple", usuario.comple)
-        console.log("estado:", usuario.estado)
-        console.log("cidade:", usuario.cidade)
-        console.log("cep:", usuario.cep)
-        console.log("descri:", usuario.descri)
-    
-    console.log("email:", usuario.email)
-    console.log("senha:", usuario.senha)
-    console.log("telefone:", usuario.telefone)
-
-}
-
-
-
-
-</script>
 </body>
 </html>
